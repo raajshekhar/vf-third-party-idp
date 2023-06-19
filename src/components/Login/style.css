@@ -1,0 +1,18 @@
+#continue-idp {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#continue-idp_border {
+    width: 100%;
+    border-top: 1px solid rgb(229 231 235);
+}
+
+.continue-idp_text {
+    position: absolute;
+    line-height: 1.5rem;
+    background: white;
+    padding-inline: 15px;
+}
