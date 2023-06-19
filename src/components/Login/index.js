@@ -19,13 +19,15 @@ const BootstrapButton = styled(Button)({
 
 const Login = () => {
     const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
     return (
-        <Grid sm={5} xs={12} sx={{ paddingInline: isSmallScreen ? "2rem" : "6rem", paddingBottom: 10, marginTop: "5rem" }}>
-            <img src={logo} className="App-logo" alt="logo" style={{ width: "40px", height: "50px" }} />
+        <Grid lg={5} md={7} xs={12} sx={{ paddingInline: isSmallScreen ? "5rem" : "6rem" }}>
+        <Grid item>
+        <img src={logo} className="App-logo" alt="logo" style={{ width: "40px", height: "50px", marginTop: "3rem" }} />
             <h2 style={{ marginTop: 0 }}>Sign in to your account</h2>
             <p>Not a member? <a href="#">Start a 14 day free trial</a></p>
+            </Grid>
             <Grid sm={12} xs={12}>
                 <label>Email address</label>
                 <OutlinedInput
@@ -61,7 +63,8 @@ const Login = () => {
                 </div>
             </Grid>
 
-            <Grid item xs={12} spacing={3} sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
+            <Grid item xs={12} spacing={3}  justifyContent={isSmallScreen ? "center" : "space-between"}
+        alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
                 <BootstrapButton variant="contained" color="error" size="large">Google</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" size="large">Twitter</BootstrapButton>
                 <BootstrapButton variant="contained" size="large">EE</BootstrapButton>
