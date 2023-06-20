@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../../logo.svg';
+import EELogo from '../../images/eeLogo.png';
 import Grid from '@mui/material/Grid';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -11,10 +12,14 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import "./style.css";
 import { styled } from '@mui/material/styles';
-
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GoogleIcon from '@mui/icons-material/Google';
 
 const BootstrapButton = styled(Button)({
-    minWidth: 180
+    textTransform: "capitalize",
+    minWidth: 180,
+    fontWeight: 550,
+    fontSize: 14
 });
 
 const Login = () => {
@@ -23,10 +28,9 @@ const Login = () => {
     const isSmallMobileScreen = useMediaQuery(theme.breakpoints.down('md')); //320px
     return (
         <Grid lg={5} md={7} xs={12} sx={{ paddingInline: isSmallMobileScreen ? "2rem" : isSmallScreen ? "5rem" : "6rem", paddingBottom: 2 }}>
-        <Grid item>
-        <img src={logo} className="App-logo" alt="logo" style={{ width: "40px", height: "50px", marginTop: "3rem" }} />
-            <h2 style={{ marginTop: 0 }}>Sign in to your account</h2>
-            <p>Not a member? <a href="#">Start a 14 day free trial</a></p>
+            <Grid item>
+                <img src={logo} className="App-logo" alt="logo" style={{ width: "40px", height: "50px", marginTop: "3rem" }} />
+                <h2 style={{ marginTop: 0 }}>Sign in to your account</h2>
             </Grid>
             <Grid sm={12} xs={12}>
                 <label>Email address</label>
@@ -63,11 +67,13 @@ const Login = () => {
                 </div>
             </Grid>
 
-            <Grid item xs={12} spacing={3}  justifyContent={isSmallScreen ? "center" : "space-between"}
-        alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
-                <BootstrapButton variant="contained" color="error" size="large">Google</BootstrapButton>
-                <BootstrapButton variant="contained" color="success" size="large">Twitter</BootstrapButton>
-                <BootstrapButton variant="contained" size="large">EE</BootstrapButton>
+            <Grid item xs={12} spacing={3} justifyContent={isSmallScreen ? "center" : "space-between"}
+                alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
+                <BootstrapButton variant="contained" color="error" size="large"><GoogleIcon sx={{ fontSize: 14, marginRight: 1 }} size="small" /> Google</BootstrapButton>
+                <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#00ade4 !important" }}><TwitterIcon sx={{ fontSize: 16, marginRight: 1 }} /> Twitter</BootstrapButton>
+                <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#009c9c !important" }}>
+                    <img src={EELogo} width="25px" style={{ paddingRight: 10 }} />
+                    EE</BootstrapButton>
             </Grid>
 
         </Grid>
