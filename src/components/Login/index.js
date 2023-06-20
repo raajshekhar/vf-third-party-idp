@@ -37,7 +37,7 @@ const Login = () => {
                     id="login_emailaddress"
                 />
             </Grid>
-            <Grid item sm={12} xs={12}>
+            <Grid item sm={12} xs={12} sx={{ marginTop: 2 }}>
                 <label>Password</label>
                 <OutlinedInput
                     fullWidth
