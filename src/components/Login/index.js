@@ -72,7 +72,7 @@ const Login = () => {
                 <BootstrapButton variant="contained" color="error" size="large"><GoogleIcon sx={{ fontSize: 14, marginRight: 1 }} size="small" /> Google</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#00ade4 !important" }}><TwitterIcon sx={{ fontSize: 16, marginRight: 1 }} /> Twitter</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ background: "#000 !important" }}>
-                    <img src={EELogo} width="25px" style={{ paddingRight: 20 }} />
+                    <img src={EELogo} width="30px" style={{ marginRight: 20, borderRadius: "50%" }} />
                     Continue with EE ID</BootstrapButton>
             </Grid>
 
