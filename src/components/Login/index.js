@@ -16,7 +16,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 
 const BootstrapButton = styled(Button)({
-    textTransform: "capitalize",
+    textTransform: "uppercase",
     minWidth: 180,
     fontWeight: 550,
     fontSize: 14
@@ -71,9 +71,9 @@ const Login = () => {
                 alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
                 <BootstrapButton variant="contained" color="error" size="large"><GoogleIcon sx={{ fontSize: 14, marginRight: 1 }} size="small" /> Google</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#00ade4 !important" }}><TwitterIcon sx={{ fontSize: 16, marginRight: 1 }} /> Twitter</BootstrapButton>
-                <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#009c9c !important" }}>
-                    <img src={EELogo} width="25px" style={{ paddingRight: 10 }} />
-                    EE</BootstrapButton>
+                <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ background: "#000 !important" }}>
+                    <img src={EELogo} width="25px" style={{ paddingRight: 20 }} />
+                    Continue with EE ID</BootstrapButton>
             </Grid>
 
         </Grid>
