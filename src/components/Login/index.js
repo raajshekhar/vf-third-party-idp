@@ -69,10 +69,10 @@ const Login = () => {
             <Grid item xs={12} spacing={3} justifyContent={isSmallScreen ? "center" : "space-between"}
                 alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
                 <BootstrapButton variant="contained" color="error" size="large" fullWidth sx={{ background: "white !important", color: "black" }}>
-                <img src={GoogleLogo} width="25px" style={{ marginRight: 20, borderRadius: "50%" }} />
+                <img src={GoogleLogo} width="21px" style={{ marginRight: 20, borderRadius: "50%" }} />
                 Continue with Google</BootstrapButton>
-                <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ background: "#000 !important" }}>
-                    <img src={EELogo} width="25px" style={{ marginRight: 20, borderRadius: "50%" }} />
+                <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ paddingLeft: 0, background: "#000 !important" }}>
+                    <img src={EELogo} width="26px" style={{ marginRight: 20, borderRadius: "50%" }} />
                     Continue with EE ID</BootstrapButton>
             </Grid>
 
