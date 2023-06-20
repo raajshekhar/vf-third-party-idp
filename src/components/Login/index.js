@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../../logo.svg';
 import EELogo from '../../images/eeLogo.png';
+import GoogleLogo from '../../images/googleLogo.png';
 import Grid from '@mui/material/Grid';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -12,8 +13,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import "./style.css";
 import { styled } from '@mui/material/styles';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GoogleIcon from '@mui/icons-material/Google';
 
 const BootstrapButton = styled(Button)({
     textTransform: "uppercase",
@@ -69,8 +68,9 @@ const Login = () => {
 
             <Grid item xs={12} spacing={3} justifyContent={isSmallScreen ? "center" : "space-between"}
                 alignItems="center" sx={{ display: "flex", flexWrap: "wrap", gap: 1, marginTop: 4 }}>
-                <BootstrapButton variant="contained" color="error" size="large"><GoogleIcon sx={{ fontSize: 14, marginRight: 1 }} size="small" /> Google</BootstrapButton>
-                <BootstrapButton variant="contained" color="success" size="large" sx={{ background: "#00ade4 !important" }}><TwitterIcon sx={{ fontSize: 16, marginRight: 1 }} /> Twitter</BootstrapButton>
+                <BootstrapButton variant="contained" color="error" size="large" fullWidth sx={{ background: "white !important", color: "black" }}>
+                <img src={GoogleLogo} width="25px" style={{ marginRight: 20, borderRadius: "50%" }} />
+                Continue with Google</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ background: "#000 !important" }}>
                     <img src={EELogo} width="25px" style={{ marginRight: 20, borderRadius: "50%" }} />
                     Continue with EE ID</BootstrapButton>
