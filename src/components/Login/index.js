@@ -20,9 +20,9 @@ const BootstrapButton = styled(Button)({
 const Login = () => {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
-
+    const isSmallMobileScreen = useMediaQuery(theme.breakpoints.down('md')); //320px
     return (
-        <Grid lg={5} md={7} xs={12} sx={{ paddingInline: isSmallScreen ? "5rem" : "6rem" }}>
+        <Grid lg={5} md={7} xs={12} sx={{ paddingInline: isSmallMobileScreen ? "2rem" : isSmallScreen ? "5rem" : "6rem", paddingBottom: 2 }}>
         <Grid item>
         <img src={logo} className="App-logo" alt="logo" style={{ width: "40px", height: "50px", marginTop: "3rem" }} />
             <h2 style={{ marginTop: 0 }}>Sign in to your account</h2>
