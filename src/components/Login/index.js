@@ -22,6 +22,8 @@ const BootstrapButton = styled(Button)({
 });
 
 const Login = () => {
+    console.clear()
+    console.log("Login::")
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
     const isSmallMobileScreen = useMediaQuery(theme.breakpoints.down('md')); //320px
