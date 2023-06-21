@@ -2,8 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './container/LoginWrapper';
 import ProductList from './container/ProductList';
+import { BrowserRouter } from "react-router-dom";
+import RouteConfig from "./config/routes";
 
 function App() {
+  return (
+    <BrowserRouter>
+      <RouteConfig />
+    </BrowserRouter>
+  )
   return <ProductList />
   return <Login />
   return (
