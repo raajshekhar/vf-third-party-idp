@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/vf-third-party-idp/static/css/main.7ad70cbd.css",
-    "main.js": "/vf-third-party-idp/static/js/main.04e07da9.js",
+    "main.js": "/vf-third-party-idp/static/js/main.50cfbfb9.js",
     "static/js/787.4ed70e3e.chunk.js": "/vf-third-party-idp/static/js/787.4ed70e3e.chunk.js",
+    "static/media/ipad.png": "/vf-third-party-idp/static/media/ipad.679a8bc02f0b719de562.png",
+    "static/media/speaker.png": "/vf-third-party-idp/static/media/speaker.afe5235d28d49c7d5a8e.png",
+    "static/media/laptop.png": "/vf-third-party-idp/static/media/laptop.abb8e2b89c63e5555de1.png",
+    "static/media/speaker2.jpg": "/vf-third-party-idp/static/media/speaker2.c4ddad34afd41594f1c6.jpg",
+    "static/media/mouse.jpg": "/vf-third-party-idp/static/media/mouse.afbb6bf06041f0e26572.jpg",
+    "static/media/earpods.jpg": "/vf-third-party-idp/static/media/earpods.e1cd1e2e2702db69e62b.jpg",
     "static/media/logo.svg": "/vf-third-party-idp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/vf-third-party-idp/index.html",
     "main.7ad70cbd.css.map": "/vf-third-party-idp/static/css/main.7ad70cbd.css.map",
-    "main.04e07da9.js.map": "/vf-third-party-idp/static/js/main.04e07da9.js.map",
+    "main.50cfbfb9.js.map": "/vf-third-party-idp/static/js/main.50cfbfb9.js.map",
     "787.4ed70e3e.chunk.js.map": "/vf-third-party-idp/static/js/787.4ed70e3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ad70cbd.css",
-    "static/js/main.04e07da9.js"
+    "static/js/main.50cfbfb9.js"
   ]
 }
