@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './container/LoginWrapper';
+import ProductList from './container/ProductList';
 
 function App() {
+  return <ProductList />
   return <Login />
   return (
     <div className="App">
