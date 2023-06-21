@@ -22,8 +22,6 @@ const BootstrapButton = styled(Button)({
 });
 
 const Login = () => {
-    console.clear()
-    console.log("Login::")
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
     const isSmallMobileScreen = useMediaQuery(theme.breakpoints.down('md')); //320px
@@ -75,7 +73,7 @@ const Login = () => {
                 Continue with Google</BootstrapButton>
                 <BootstrapButton variant="contained" color="success" fullWidth size="large" sx={{ paddingLeft: 0, background: "#000 !important" }}>
                     <img src={EELogo} width="26px" style={{ marginRight: 20, borderRadius: "50%" }} />
-                    Continue with EE ID</BootstrapButton>
+                    Continue with EE</BootstrapButton>
             </Grid>
 
         </Grid>
