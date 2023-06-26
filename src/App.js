@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Login from './container/LoginWrapper';
 import ProductList from './container/ProductList';
-import { BrowserRouter } from "react-router-dom";
 import RouteConfig from "./config/routes";
+import Header from "./components/Header";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <RouteConfig />
     </BrowserRouter>
   )
